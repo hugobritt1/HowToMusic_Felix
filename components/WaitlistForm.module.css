@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.formDark .label {
+  color: var(--yellow);
+}
+
+.input {
+  background-color: white;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(46, 111, 242, 0.15);
+}
+
+select.input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23151A2E' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.formDark .input {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.formDark .input:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.15);
+}
+
+.formDark select.input {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23FFD23F' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+}
+
+.small {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin-top: 4px;
+}
+
+.formDark .small {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.success {
+  background: white;
+  border-left: 4px solid var(--yellow);
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.successDark {
+  background: rgba(255, 255, 255, 0.06);
+  border-left-color: var(--yellow);
+  color: white;
+}
+
+.successBadge {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--yellow);
+  padding: 8px 18px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.successCopy {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.successDark .successCopy {
+  color: white;
+}
+
+.successSub {
+  color: var(--ink-mute);
+  font-size: 15px;
+}
+
+.successDark .successSub {
+  color: rgba(255, 255, 255, 0.6);
+}
