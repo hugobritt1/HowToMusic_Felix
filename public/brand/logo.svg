@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="HowToMusic logo">
+  <defs>
+    <clipPath id="body-clip">
+      <path d="M320 190 C 245 190 175 245 175 355 C 175 470 245 560 320 560 C 395 560 465 470 465 355 C 465 245 395 190 320 190 Z"/>
+    </clipPath>
+    <linearGradient id="blue-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2E6FF2"/>
+      <stop offset="100%" stop-color="#1F3C88"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left half: guitar body (blue) -->
+  <g clip-path="url(#body-clip)">
+    <rect x="150" y="180" width="170" height="400" fill="url(#blue-grad)"/>
+    <!-- Right half: yellow disc -->
+    <rect x="320" y="180" width="170" height="400" fill="#FFD23F"/>
+    <!-- Sound hole on the blue side -->
+    <circle cx="270" cy="405" r="34" fill="#1F3C88"/>
+    <circle cx="270" cy="405" r="24" fill="#0F2555"/>
+    <!-- Piano keys inside the yellow half -->
+    <g fill="#1F3C88">
+      <rect x="340" y="300" width="34" height="70"/>
+      <rect x="340" y="395" width="34" height="70"/>
+      <rect x="340" y="490" width="26" height="45"/>
+    </g>
+    <g stroke="#1F3C88" stroke-width="3" fill="none">
+      <line x1="325" y1="280" x2="325" y2="560"/>
+      <line x1="384" y1="280" x2="384" y2="560"/>
+    </g>
+    <!-- Yellow accent lines emerging from piano keys -->
+    <g stroke="#FFD23F" stroke-width="4">
+      <line x1="375" y1="335" x2="410" y2="335"/>
+      <line x1="375" y1="430" x2="410" y2="430"/>
+      <line x1="367" y1="512" x2="405" y2="512"/>
+    </g>
+  </g>
+
+  <!-- Guitar neck -->
+  <rect x="308" y="90" width="24" height="120" fill="url(#blue-grad)"/>
+
+  <!-- Strings running down the neck -->
+  <g stroke="#1F3C88" stroke-width="2">
+    <line x1="314" y1="90" x2="314" y2="560"/>
+    <line x1="320" y1="90" x2="320" y2="560"/>
+    <line x1="326" y1="90" x2="326" y2="560"/>
+  </g>
+
+  <!-- Headstock -->
+  <path d="M285 30 L355 30 L365 90 L275 90 Z" fill="url(#blue-grad)"/>
+  <!-- Tuning pegs -->
+  <g fill="#FFD23F">
+    <circle cx="293" cy="50" r="5"/>
+    <circle cx="293" cy="72" r="5"/>
+    <circle cx="347" cy="50" r="5"/>
+    <circle cx="347" cy="72" r="5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g font-family="Poppins, Montserrat, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="80" letter-spacing="-1">
+    <text x="320" y="640" text-anchor="middle" fill="#1F3C88">
+      <tspan>HowTo</tspan><tspan fill="#FFD23F">Music</tspan>
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <g font-family="Poppins, Montserrat, Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="18" letter-spacing="4">
+    <line x1="120" y1="678" x2="200" y2="678" stroke="#1F3C88" stroke-width="3"/>
+    <text x="320" y="685" text-anchor="middle" fill="#1F3C88">LEARN IT. PRACTICE. PLAY IT.</text>
+    <line x1="440" y1="678" x2="520" y2="678" stroke="#FFD23F" stroke-width="3"/>
+  </g>
+</svg>
